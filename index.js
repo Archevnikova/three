@@ -1,5 +1,5 @@
 
-
+/*
 
 function one (a,b) {
     if (a<b) {
@@ -11,7 +11,7 @@ function one (a,b) {
     } 
 }
 
-console.log (one(3,5));
+console.log (one(5,5));
 
 
 function two (n){
@@ -36,7 +36,7 @@ console.log(factorial (n));
 */
 
 
-
+/*
 
 function three(a,b,c) {
     let result=""+a+b+c;
@@ -57,3 +57,27 @@ function four(length,width=0){
 
 };
 console.log(four(3,4));
+*/
+
+
+
+function perfectNumber(n){
+    let sum=0;
+    let remains;
+    for (let i=1;i<n-1;i++){
+        remains=n%1;
+    if (remains===0){
+        sum+=i;
+        }
+    };
+    if (n===sum){
+        console.log(n+'-Совершенное число');
+    }else {
+        console.log('Не совершенное число');
+    }
+};
+ 
+
+function time(hh,mm,ss){
+return (ss,mm,hh)
+};
